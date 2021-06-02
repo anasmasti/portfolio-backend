@@ -11,12 +11,11 @@ router.post('/', async (req, res, next) => {
         await message.save()
             .then(data => {
                 res.send(data);
-            }).catch(error => {
-                if (error.isJoi === true) error.status = 422
-                next(error)
-            });
-    } catch (error) { 
-        next(error)
+            })
+    } catch (error) {
+        res.status(500).send({
+            message: error.message || "error retrieving."
+        });
     }
 });
 
