@@ -37,7 +37,7 @@ app.use(cors({
     methods: [
         'GET', 'POST', 'PUT', 'DELETE'
     ],
-    allowedHeaders: 'Content-Type, X-Requested-With, Accept, Origin, Authorization'
+    allowedHeaders: 'Content-Type, X-Requested-With, Accept, Origin, Authorization, Api-Key-Access'
 }))
 
 //database connection
