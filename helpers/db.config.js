@@ -6,7 +6,7 @@ const DB_URL_LOCAL = process.env.DB_URL_LOCAL;
 const DB_URL = process.env.DB_URL;
 
 //Ccnnection with database
-const db_config = mongoose.connect(DB_URL_LOCAL, {
+const db_config = mongoose.connect(DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
