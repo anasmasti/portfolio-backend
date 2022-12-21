@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 // config for Cors
 app.use(
   cors({
-    origin: "https://anasmasti.com",
+    origin: "https://www.anasmasti.com",
     credentials: true,
     methods: ["GET", "POST"],
     allowedHeaders:
